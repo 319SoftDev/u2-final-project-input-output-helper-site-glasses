@@ -13,13 +13,24 @@
 
     <div>
         <img src="heart-image.png">
-        <form>
-            <input name="Your Name"></input>
-            <input type="number" name="Age" min="1" max="100"></input>
-            <input name="Your Crush"></input>
-            <input type="number" name="Age" min="1" max="100"></input>
+
+        <form id="your-info">
+            <input type="text" name="Your Name" placeholder="Your Name" id="your-name"></input>
+            <br>
+            <input type="number" name="Age" min="1" max="100" placeholder="Age" id="your-age"></input>
         </form>
-        <button>Calculate Love</button>
+
+        <form id="crush-info">
+            <input type="text" name="Your Crush" placeholder="Your Crush" id="your-crush"></input>
+            <br>
+            <input type="number" name="Age" min="1" max="100" placeholder="Age" id="crush-age"></input>
+        </form>
+
+        <button id="calculate-button">Calculate Love</button>
+
+        <div id="results">
+
+        </div>
     </div>
 </body>
 </html>
