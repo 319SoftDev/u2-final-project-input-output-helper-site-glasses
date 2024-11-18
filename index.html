@@ -11,21 +11,27 @@
         <p>Calculate what percentage of compatibility you have with a potential lover 💗</p>
     </div>
 
-    <div id="input-forms">
+    <div id="forms-container">
         <img src="heart-image.png">
-
-        <form id="your-info">
-            <input type="text" name="Your Name" placeholder="Your Name" id="your-name"></input>
-            <br>
-            <input type="number" name="Age" min="1" max="100" placeholder="Age" id="your-age"></input>
-        </form>
-
-        <form id="crush-info">
-            <input type="text" name="Your Crush" placeholder="Your Crush" id="your-crush"></input>
-            <br>
-            <input type="number" name="Age" min="1" max="100" placeholder="Age" id="crush-age"></input>
-        </form>
-
+        <div class="center">
+            <div class="flex-container">
+                <div>
+                    <form id="your-info">
+                        <input type="text" name="Your Name" placeholder="Your Name" id="your-name"></input>
+                        <br>
+                        <input type="number" name="Age" min="1" max="100" placeholder="Age" id="your-age"></input>
+                    </form>
+                </div>
+    
+                <div>
+                    <form id="crush-info">
+                        <input type="text" name="Your Crush" placeholder="Your Crush" id="your-crush"></input>
+                        <br>
+                        <input type="number" name="Age" min="1" max="100" placeholder="Age" id="crush-age"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
         <button id="calculate-button">Calculate Love</button>
     </div>
     <div id="results">
