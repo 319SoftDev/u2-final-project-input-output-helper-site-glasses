@@ -35,3 +35,18 @@ body {
     text-align: center;
 }
 
+#calculate-button {
+    background-color: rgb(214, 40, 40);
+    color: aliceblue;
+    border-color: rgba(185, 25, 25, 0.603);
+    border-width: 3px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    cursor:grab;
+}
+
+#calculate-button:active{
+    cursor: grabbing;
+}
