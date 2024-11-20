@@ -3,14 +3,18 @@ const calculateButton = document.querySelector("#calculate-button");
 const yourNameInput = document.querySelector("#your-name");
 const crushNameInput = document.querySelector("#crush-name");
 
+const set1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+const set2 = ["j", "k", "l", "m", "n", "o", "p", "q", "r"];
+const set3 = ["s", "t", "u", "v", "w", "x", "y", "z"];
+
 const nameCompatibility = () => {
-    
+
 }
 
 // age input functions
 const YourAgeInput = document.querySelector("#your-age");
 const CrushAgeInput = document.querySelector("#crush-age");
-const resultsDiv = document.querySelector("#results");
+const resultsDiv = document.querySelector("#ageResults");
 
 const ageCompatibility = () => {
     // Get the actual numerical values from the inputs
