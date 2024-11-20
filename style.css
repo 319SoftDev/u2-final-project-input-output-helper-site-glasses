@@ -23,6 +23,12 @@ body {
     text-align: center;
 }
  
+.cat-img{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+
  
 .center {
     position: absolute;
