@@ -3,6 +3,7 @@ body {
     background-image: url("poster.png");
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgb(107, 7, 7);
 }
 
 .flex-container {
