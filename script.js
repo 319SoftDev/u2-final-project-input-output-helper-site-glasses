@@ -9,8 +9,6 @@ const nameNumValue = () => {
     }
     const name1 = yourNameInput.toUpperCase();
     const name2 = crushNameInput.toUpperCase();
-
-    console.log(name1, name2);
 }
 
 // age input functions
