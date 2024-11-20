@@ -3,13 +3,17 @@ const calculateButton = document.querySelector("#calculate-button");
 const yourNameInput = document.querySelector("#your-name");
 const crushNameInput = document.querySelector("#crush-name");
 
-const set1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
-const set2 = ["j", "k", "l", "m", "n", "o", "p", "q", "r"];
-const set3 = ["s", "t", "u", "v", "w", "x", "y", "z"];
+const nameNumValue = () => {
+    const letterValues = {
+        A:1, B:2, C:3, D:4, E:5, F:6, G:7, H:8, I:9, J:1, K:2, L:3, M:4, N:5, O:6, P:7, Q:8, R:9, S:1, T:2, U:3, V:4, W:5, X:6, Y:7, Z:8
+    }
+    const name1 = yourNameInput.toUpperCase();
+    const name2 = crushNameInput.toUpperCase();
 
-const nameCompatibility = () => {
-
+    console.log(name1, name2);
 }
+
+calculateButton.addEventListener('click', nameNumValue)
 
 // age input functions
 const YourAgeInput = document.querySelector("#your-age");
