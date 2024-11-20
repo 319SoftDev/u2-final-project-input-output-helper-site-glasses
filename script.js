@@ -44,7 +44,7 @@ const ageCompatibility = () => {
         if (crushAge < olderRange) {
             resultsDiv.innerHTML = "Woah you creep too young...";
         } else {
-            resultsDiv.innerHTML = "You're not too old for them ;)";
+            resultsDiv.innerHTML = "You're not too old for them (;";
         }
     } else {
         resultsDiv.innerHTML = "You are the same age!";
@@ -52,3 +52,28 @@ const ageCompatibility = () => {
 }
 
 calculateButton.addEventListener('click', ageCompatibility);
+
+// final results
+const finalResults = () => {
+    if (percentage < 11) {
+
+    } else if (10 < percentage < 21) {
+
+    } else if (20 < percentage < 31) {
+
+    } else if (30 < percentage < 41) {
+
+    } else if (40 < percentage < 51) {
+
+    } else if (50 < percentage < 61) {
+
+    } else if (60 < percentage < 71) {
+
+    } else if (70 < percentage < 81) {
+
+    } else if (80 < percentage < 91) {
+
+    } else if (90 < percentage < 101) {
+
+    }
+}
