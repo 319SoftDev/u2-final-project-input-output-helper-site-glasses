@@ -1,5 +1,11 @@
 // name input functions
 const calculateButton = document.querySelector("#calculate-button");
+const yourNameInput = document.querySelector("#your-name");
+const crushNameInput = document.querySelector("#crush-name");
+
+const nameCompatibility = () => {
+    
+}
 
 // age input functions
 const YourAgeInput = document.querySelector("#your-age");
