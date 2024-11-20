@@ -36,6 +36,10 @@ body {
 }
 
 #calculate-button {
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     background-color: rgb(214, 40, 40);
     color: aliceblue;
     border-color: rgba(185, 25, 25, 0.603);
@@ -45,12 +49,32 @@ body {
     border-radius: 10px;
     display: inline-block;
     cursor:grab;
+
 }
 
 #calculate-button:active{
     cursor: grabbing;
 }
 
+#ageResults{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#percentage{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
 
 .yourInfo{
 	background-color:#FFFFF0;
@@ -78,6 +102,10 @@ body {
 .crush-age{
 	background-color:#FFFFF0;
 	border-radius: 18px;
+    padding: 4px;
+	border:none;
+	
+}
     padding: 4px;
 	border:none;
 	
