@@ -13,8 +13,6 @@ const nameNumValue = () => {
     console.log(name1, name2);
 }
 
-calculateButton.addEventListener('click', nameNumValue)
-
 // age input functions
 const YourAgeInput = document.querySelector("#your-age");
 const CrushAgeInput = document.querySelector("#crush-age");
