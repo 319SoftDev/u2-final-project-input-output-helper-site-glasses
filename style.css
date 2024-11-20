@@ -3,6 +3,7 @@ body {
     background-image: url("poster.png");
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgb(107, 7, 7);
 }
 
 .flex-container {
@@ -61,7 +62,27 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    font-size: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#percentage{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#phrase{
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
