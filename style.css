@@ -77,6 +77,16 @@ body {
     text-align: center;
 }
 
+#phrase{
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .yourInfo{
 	background-color:#FFFFF0;
 	border-radius: 10px;
@@ -103,6 +113,7 @@ body {
 .crush-age{
 	background-color:#FFFFF0;
 	border-radius: 18px;
-    	padding: 4px;
+    padding: 4px;
 	border:none;
+	
 }
