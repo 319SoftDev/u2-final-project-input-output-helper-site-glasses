@@ -50,3 +50,35 @@ body {
 #calculate-button:active{
     cursor: grabbing;
 }
+
+
+.yourInfo{
+	background-color:#FFFFF0;
+	border-radius: 10px;
+    padding: 10px;
+    border:none;
+}
+
+.yourAge{
+	background-color:#FFFFF0;
+	border-radius: 18px;
+    padding: 4px;
+	border:none;
+
+	
+}
+
+.crush-name{
+	background-color:#FFFFF0;
+	border-radius: 10px;
+    padding: 10px;
+    border:none;
+}
+
+.crush-age{
+	background-color:#FFFFF0;
+	border-radius: 18px;
+    padding: 4px;
+	border:none;
+	
+}
