@@ -58,7 +58,7 @@ body {
 }
 
 #calculate-button {
-    top: 56%;
+    top: 69%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -89,7 +89,7 @@ body {
 }
 
 #percentage{
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
