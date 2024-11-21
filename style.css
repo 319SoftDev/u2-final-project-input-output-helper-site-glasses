@@ -34,9 +34,9 @@ body {
 
 .cat-img {
     position: absolute;
-    top: 140%; /* Adjusted to be inside the viewport */
+    top: 120%; 
     left: 50%;
-    transform: translate(-50%, -50%);  /* Center the cat image */
+    transform: translate(-50%, -50%); 
 
 }
 
