@@ -4,17 +4,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(107, 7, 7);
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;  
+    align-items: center;
+    margin-top: 20px;
 }
  
 .flex-container > div {
-    margin: 120px;
+    margin: 130px;
     text-align: center;
-    line-height: 75px;
+    line-height: 50px;
 }
 
 
@@ -23,11 +33,14 @@ body {
     text-align: center;
 }
 
-.cat-img{
-    position: relative;
-    top: 70%;
+.cat-img {
+    position: absolute;
+    top: 140%; /* Adjusted to be inside the viewport */
     left: 50%;
+    transform: translate(-50%, -50%);  /* Center the cat image */
 }
+
+
 
 .center {
     position: absolute;
@@ -39,6 +52,8 @@ body {
 .heading{
     flex-direction: column;
     text-align: center;
+              
+    
 }
 
 #calculate-button {
