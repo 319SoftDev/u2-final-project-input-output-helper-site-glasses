@@ -38,6 +38,7 @@ body {
     top: 140%; /* Adjusted to be inside the viewport */
     left: 50%;
     transform: translate(-50%, -50%);  /* Center the cat image */
+
 }
 
 
@@ -78,7 +79,7 @@ body {
 }
 
 #ageResults{
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
