@@ -73,14 +73,19 @@ const finalResults = () => {
         phrase.innerHTML = "You're going to be the joke  of the friend group";
 
     } else if (50 < percentage < 61) {
+        phrase.innerHTML = "sure...";
 
     } else if (60 < percentage < 71) {
+        phrase.innerHTML = "If you're not scared of rejection, go for it but don't blame me if they don't accept";
 
     } else if (70 < percentage < 81) {
+        phrase.innerHTML = "Shoot your shot";
 
     } else if (80 < percentage < 91) {
+        phrase.innerHTML = "You better tell them";
 
     } else if (90 < percentage < 101) {
+        phrase.innerHTML = "Invite me to the carne asada!!";
 
     }
 }
