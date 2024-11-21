@@ -2,28 +2,45 @@
 const calculateButton = document.querySelector("#calculate-button");
 const yourNameInput = document.querySelector("#your-name");
 const crushNameInput = document.querySelector("#crush-name");
+const percentage = document.querySelector("#percentage");
 
-const nameNumValue = () => {
-    const letterValues = {
-        A:1, B:2, C:3, D:4, E:5, F:6, G:7, H:8, I:9, 
-        J:1, K:2, L:3, M:4, N:5, O:6, P:7, Q:8, R:9, 
-        S:1, T:2, U:3, V:4, W:5, X:6, Y:7, Z:8
+function getNameCompatibility(name1, name2) {
+    function nameToNumber(name) {
+        let sum = 0;
+        name = name.toUpperCase();
+        for (let i = 0; i < name.length; i++) {
+            const char = name[i];
+            if (char >= 'A' && char <= 'Z') {
+                sum += char.charCodeAt(0) - 'A'.charCodeAt(0) + 1;
+            }
+        }
+        return sum;
     }
-    const name1 = yourNameInput.toUpperCase().replace(/[^A-Z]/g, '');
-    const name2 = crushNameInput.toUpperCase().replace(/[^A-Z]/g, '');
+
+    // Convert both names to number sums
+    const sum1 = nameToNumber(name1);
+    const sum2 = nameToNumber(name2);
+
+    const compatibilityScore = (sum1 + sum2) % 100;
+    percentage.innerHTML = `${compatibilityScore}`;
+    return compatibilityScore;
 }
+
+const name1 = yourNameInput;
+const name2 = crushNameInput;
+const compatibility = getNameCompatibility(name1, name2);
+console.log(`The compatibility score between ${name1} and ${name2} is: ${compatibility}`);
+
 
 // age input functions
 const YourAgeInput = document.querySelector("#your-age");
 const CrushAgeInput = document.querySelector("#crush-age");
-const resultsDiv = document.querySelector("#ageResults");
+const ageResult = document.querySelector("#ageResults");
 
 const ageCompatibility = () => {
-    // Get the actual numerical values from the inputs
     const yourAge = parseInt(YourAgeInput.value);
     const crushAge = parseInt(CrushAgeInput.value);
 
-    // Check if input values are valid numbers
     if (isNaN(yourAge) || isNaN(crushAge)) {
         resultsDiv.innerHTML = "Please enter valid ages.";
         return;
@@ -38,18 +55,18 @@ const ageCompatibility = () => {
     // Compare ages and display result
     if (yourAge < crushAge) {
         if (crushAge > youngerRange) {
-            resultsDiv.innerHTML = "Too old!";
+            ageResult.innerHTML = "Too old!";
         } else {
-            resultsDiv.innerHTML = "Just enough!";
+            ageResult.innerHTML = "Just enough!";
         }
     } else if (yourAge > crushAge) {
         if (crushAge < olderRange) {
-            resultsDiv.innerHTML = "Woah you creep too young...";
+            ageResult.innerHTML = "Woah you creep too young...";
         } else {
-            resultsDiv.innerHTML = "You're not too old for them (;";
+            ageResult.innerHTML = "You're not too old for them (;";
         }
     } else {
-        resultsDiv.innerHTML = "You are the same age!";
+        ageResult.innerHTML = "You are the same age!";
     }
 }
 
