@@ -5,10 +5,13 @@ const crushNameInput = document.querySelector("#crush-name");
 const percentage = document.querySelector("#percentage");
 
 const nameCompatibility = () => {
+    // assigning a number from 1 to 26 to each letter
     const letterVal = {A:1, B:2, C:3, D:4, E:5, F:6, G:7, H:8, I:9, J:10, K:11, L:12, M:13, N:14, O:15, P:16, Q:17, R:18, S:19, T:20, U:21, V:22, W:23, X:24, Y:25, Z:26}
     
-    let sum1 = 0
-    let sum2 = 0
+    let sum1 = 0;
+    console.log(sum1);
+    let sum2 = 0;
+    console.log(sum2);
 
     for (let i = 0; i < yourNameInput.length; i++) {
         let letter = yourNameInput[i].toUpperCase();
@@ -30,13 +33,13 @@ const nameCompatibility = () => {
     percentage.innerHTML = `${avgNum}%`;
 }
 
-// age input functions
+// age input query selectors
 const YourAgeInput = document.querySelector("#your-age");
 const CrushAgeInput = document.querySelector("#crush-age");
 const ageResult = document.querySelector("#ageResults");
 
 // final results
-const phrase = document.querySelector("#phrase")
+const phrase = document.querySelector("#phrase");
 
 
 const ageCompatibility = () => {
@@ -45,7 +48,7 @@ const ageCompatibility = () => {
     const crushAge = parseInt(CrushAgeInput.value);
 
     if (isNaN(yourAge) || isNaN(crushAge)) {
-        resultsDiv.innerHTML = "Please enter valid ages.";
+        ageResult.innerHTML = "Please enter valid ages.";
         return;
     }
 
@@ -80,8 +83,4 @@ const ageCompatibility = () => {
     // }
 }
 
-calculateButton.addEventListener('click', () => {
-    nameCompatibility();
-
-    ageCompatibility();
-});
+calculateButton.addEventListener('click', ageCompatibility);
