@@ -14,9 +14,9 @@ const nameCompatibility = () => {
         sum1 += yourNameInput.charCodeAt(i);
     }
     for (let i = 0; i < crushNameInput.length; i++) {
-        sum1 += crushNameInput.charCodeAt(i);
+        sum2 += crushNameInput.charCodeAt(i);
     }
-
+    
     avgNum = (sum1 + sum2)/20;
     percentage.innerHTML = `${avgNum}%`;
 }
