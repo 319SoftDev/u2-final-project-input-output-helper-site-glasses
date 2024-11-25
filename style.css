@@ -201,3 +201,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         padding: 6px;
     }
 }
+
+.hidden{
+    display:none;
+}
