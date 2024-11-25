@@ -47,7 +47,7 @@ body::before {
 
 .cat-img {
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -114,6 +114,7 @@ body::before {
     font-weight: bold;
 }
 
+
 input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     background-color: #FFFFF0;
     border-radius: 10px;
@@ -122,8 +123,8 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 }
 
 .yourAge, .crush-age {
-    border-radius: 18px;
-    padding: 4px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 /* Mobile */
