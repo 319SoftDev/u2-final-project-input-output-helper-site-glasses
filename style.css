@@ -45,7 +45,7 @@ body::before {
 }
 
 
-#cat-img {
+.cat-img {
     position: absolute;
     top: 130%;
     left: 50%;

@@ -110,7 +110,7 @@ const ageCompatibility = () => {
 
 const cat = document.querySelector("#cat");
 
-const unhide = ()=>{
+const unhide = ()=> {
     cat.classList.remove("hidden");
 }
 
@@ -121,15 +121,14 @@ calculateButton.addEventListener('click', () => {
 });
 
 
-
 // restart button query selector
-// const restartButton = document.querySelector("#restart-button");
+const restartButton = document.querySelector("#restart-button");
 
-// const restartCalculator = () => {
-//     // clearing the messages and percentage 
-//     percentage.innerHTML = ``;
-//     phraseOutput.innerHTML = ``;
-//     ageResult.innerHTML = ``;
-// }
+const restartCalculator = () => {
+    // clearing the messages and percentage 
+    percentage.innerHTML = ``;
+    phraseOutput.innerHTML = ``;
+    ageResult.innerHTML = ``;
+}
 
-// restartButton.addEventListener("click", restartCalculator);
+restartButton.addEventListener("click", restartCalculator);
