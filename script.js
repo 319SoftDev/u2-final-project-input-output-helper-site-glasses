@@ -116,13 +116,13 @@ calculateButton.addEventListener('click', () => {
 
 
 // restart button query selector
-const restartButton = document.querySelector("#restart-button");
+// const restartButton = document.querySelector("#restart-button");
 
-const restartCalculator = () => {
-    // clearing the messages and percentage 
-    percentage.innerHTML = ``;
-    phraseOutput.innerHTML = ``;
-    ageResult.innerHTML = ``;
-}
+// const restartCalculator = () => {
+//     // clearing the messages and percentage 
+//     percentage.innerHTML = ``;
+//     phraseOutput.innerHTML = ``;
+//     ageResult.innerHTML = ``;
+// }
 
-restartButton.addEventListener("click", restartCalculator);
+// restartButton.addEventListener("click", restartCalculator);
