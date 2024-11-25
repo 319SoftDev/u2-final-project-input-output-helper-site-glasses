@@ -19,7 +19,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.3); /* Dark overlay */
+    background-color: rgba(255, 255, 255, 0.171); /* Dark overlay */
     z-index: -1;
 }
 
@@ -116,7 +116,8 @@ body::before {
 
 
 input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-    background-color: #FFFFF0;
+    background-color: #8d063a;
+    font-style: italic;
     border-radius: 10px;
     padding: 10px;
     border: none;
@@ -150,7 +151,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     }
 
     .crush-name{
-        top: 70%;
+       position: sticky;
     }
 
    
@@ -168,7 +169,6 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 
     /* Make the form fields more compact */
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-        
         width: 80%;
         padding: 8px;
         margin-bottom: 15px;
