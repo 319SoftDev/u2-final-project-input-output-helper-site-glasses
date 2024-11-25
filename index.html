@@ -8,7 +8,7 @@
 <body>
     <div class="heading">
         <h1>Love Alarm</h1>
-        <p>Calculate what percentage of compatibility you have with a potential lover 💗</p>
+        <p style="font-size: 25px;">Calculate what percentage of compatibility you have with a potential lover 💗</p>
     </div>
 
     <div id="forms-container">
@@ -17,9 +17,9 @@
             <img src="heart-image.png">
         </div>
         <div class="cat-img" id="hide-button">
-            <img src="img-cat.png">
-            <p id="ageResults"></p>
+            <img src="img-cat.png" class="hidden" id="cat">
             <p id="phrase"></p>
+            <p id="ageResults"></p>
         </div>
         <div class="center">
             <div class="flex-container">
@@ -28,7 +28,7 @@
                     <br>
                     <input type="number" class="yourAge" name="Age" min="1" max="100" placeholder="Age" id="your-age"></input>
                 </div>
-    
+                
                 <div>
                     <input type="text" class="crush-name" name="Your Crush" placeholder="Your Crush" id="crush-name"></input>
                     <br>
@@ -38,15 +38,11 @@
         </div>
 
         <button id="calculate-button">Calculate Love</button>
+        <button id="restart-button">Restart</button>
     </div>
 
-        <p id="percentage">#%</p>
+    <p id="percentage"></p>
 
-    <div>
-        <p id="ageResults">Age compatibility</p>
-    </div>
-
-        <p id="phrase"></p>
     <script src="script.js"></script>
 </body>
 </html>
