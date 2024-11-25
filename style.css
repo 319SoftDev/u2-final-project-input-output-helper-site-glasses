@@ -1,23 +1,37 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-image: url("poster.png");
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
     color: rgb(107, 7, 7);
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    height: 100vh; 
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Dark overlay */
+    z-index: -1;
+}
+
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;  
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
- 
+
 .flex-container > div {
     margin: 130px;
     text-align: center;
@@ -30,14 +44,13 @@ body {
     text-align: center;
 }
 
+
 .cat-img {
     position: absolute;
-    top: 120%; 
+    top: 120%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    /* visibility: ; */
+    transform: translate(-50%, -50%);
 }
-
 
 
 .center {
@@ -47,18 +60,17 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.heading{
+.heading {
     flex-direction: column;
     text-align: center;
-              
-    
 }
 
+
 #calculate-button {
+    position: absolute;
     top: 69%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
     background-color: rgb(214, 40, 40);
     color: aliceblue;
     border-color: rgba(185, 25, 25, 0.603);
@@ -67,70 +79,120 @@ body {
     text-align: center;
     border-radius: 10px;
     display: inline-block;
-    cursor:grab;
-
+    cursor: grab;
 }
 
-#calculate-button:active{
+#calculate-button:active {
     cursor: grabbing;
 }
 
-#ageResults{
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+#ageResults,
+#percentage,
+#phrase {
     position: absolute;
-    font-size: 25px;
-    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
 
-#percentage{
+#ageResults {
+    top: 55%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#percentage {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
 }
 
-#phrase{
+#phrase {
     top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
     font-size: 25px;
     font-weight: bold;
-    text-align: center;
 }
 
-.yourInfo{
-	background-color:#FFFFF0;
-	border-radius: 10px;
+input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
+    background-color: #FFFFF0;
+    border-radius: 10px;
     padding: 10px;
-    border:none;
+    border: none;
 }
 
-.yourAge{
-	background-color:#FFFFF0;
-	border-radius: 18px;
+.yourAge, .crush-age {
+    border-radius: 18px;
     padding: 4px;
-	border:none;
-
 }
 
-.crush-name{
-	background-color:#FFFFF0;
-	border-radius: 10px;
-    padding: 10px;
-    border:none;
+/* Mobile */
+@media (max-width: 768px) {
+    /* smaller screens */
+    .flex-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    /* Reduce margins and padding for smaller screens */
+    .flex-container > div {
+        margin: 50px;
+    }
+
+    #calculate-button {
+        top: 56%;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .crush-name{
+        top: 70%;
+    }
+
+   
+    #ageResults {
+        font-size: 22px;
+    }
+
+    #percentage {
+        font-size: 35px;
+    }
+
+    #phrase {
+        font-size: 20px;
+    }
+
+    /* Make the form fields more compact */
+    input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
+        
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
 }
 
-.crush-age{
-	background-color:#FFFFF0;
-	border-radius: 18px;
-    padding: 4px;
-	border:none;
-	
+/* very small screens */
+@media (max-width: 480px) {
+    #calculate-button {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    #ageResults {
+        font-size: 18px;
+    }
+
+    #percentage {
+        font-size: 28px;
+    }
+
+    #phrase {
+        font-size: 18px;
+    }
+
+    /* smaller screens */
+    input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
+        width: 90%;
+        padding: 6px;
+    }
 }
