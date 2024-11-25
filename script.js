@@ -108,11 +108,18 @@ const ageCompatibility = () => {
     }
 }
 
+const cat = document.querySelector("#cat");
+
+const unhide = ()=>{
+    cat.classList.remove("hidden");
+}
+
 calculateButton.addEventListener('click', () => {
     nameCompatibility();
-
+    unhide();
     ageCompatibility();
 });
+
 
 
 // restart button query selector
