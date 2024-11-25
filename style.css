@@ -1,7 +1,7 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-image: url("poster.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat ;
     background-size: cover;
     color: rgb(107, 7, 7);
 }
@@ -9,12 +9,15 @@ body {
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;  
+    align-items: center;
+    margin-top: 20px;
 }
  
 .flex-container > div {
-    margin: 120px;
+    margin: 130px;
     text-align: center;
-    line-height: 75px;
+    line-height: 50px;
 }
 
 
@@ -22,8 +25,16 @@ body {
     position: relative;
     text-align: center;
 }
- 
- 
+
+.cat-img {
+    position: absolute;
+    top: 120%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+}
+
+
 .center {
     position: absolute;
     top: 50%;
@@ -34,6 +45,8 @@ body {
 .heading{
     flex-direction: column;
     text-align: center;
+              
+    
 }
 
 #calculate-button {
@@ -100,7 +113,6 @@ body {
     padding: 4px;
 	border:none;
 
-	
 }
 
 .crush-name{
