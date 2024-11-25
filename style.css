@@ -122,8 +122,9 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 }
 
 .yourAge, .crush-age {
-    border-radius: 18px;
-    padding: 4px;
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 /* Mobile */
