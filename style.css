@@ -47,7 +47,7 @@ body::before {
 
 .cat-img {
     position: absolute;
-    top: 130%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -114,7 +114,6 @@ body::before {
     font-weight: bold;
 }
 
-
 input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     background-color: #8d063a;
     font-style: italic;
@@ -124,8 +123,6 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 }
 
 .yourAge, .crush-age {
-    border-radius: 10px;
-    padding: 10px;
     padding: 8px;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -200,3 +197,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         padding: 6px;
     }
 }
+
+.hidden {
+    display: none;
+  }
