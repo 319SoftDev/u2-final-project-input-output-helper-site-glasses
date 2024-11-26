@@ -124,9 +124,15 @@ const restartButton = document.querySelector("#restart-button");
 
 const restartCalculator = () => {
     // clearing the messages and percentage 
-    percentage.innerHTML = ``;
-    phraseOutput.innerHTML = ``;
-    ageResult.innerHTML = ``;
+    percentage.innerHTML = "";
+    phraseOutput.innerHTML = "";
+    ageResult.innerHTML = "";
+    cat.classList.add("hidden");
+    document.getElementById("your-name").value = "";
+    document.getElementById("your-age").value = "";
+    document.getElementById("crush-name").value = "";
+    document.getElementById("crush-age").value = "";
+
 }
 
 restartButton.addEventListener("click", restartCalculator);
