@@ -115,12 +115,15 @@ body::before {
 }
 
 input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-    background-color: #8d063a;
+    background-color: #eec1d2;
+    box-shadow: 0 12px 16px #af456e;
     font-style: italic;
     border-radius: 10px;
     padding: 10px;
     border: none;
 }
+
+
 
 .yourAge, .crush-age {
     padding: 8px;
