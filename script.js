@@ -108,7 +108,7 @@ const ageCompatibility = () => {
 
 const cat = document.querySelector("#cat");
 
-const unhide = ()=>{
+const unhide = ()=> {
     cat.classList.remove("hidden");
 }
 
@@ -132,6 +132,7 @@ const restartCalculator = () => {
     document.getElementById("your-age").value = "";
     document.getElementById("crush-name").value = "";
     document.getElementById("crush-age").value = "";
+
 
 }
 
