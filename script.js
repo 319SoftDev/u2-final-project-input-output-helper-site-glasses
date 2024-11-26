@@ -124,10 +124,10 @@ const restartButton = document.querySelector("#restart-button");
 
 const restartCalculator = () => {
     // clearing the messages and percentage 
-    percentage.innerHTML = ``;
-    phraseOutput.innerHTML = ``;
-    ageResult.innerHTML = ``;
+    cat.classList.add("hidden");
+    percentage.innerHTML = "";
+    phraseOutput.innerHTML = "";
+    ageResult.innerHTML = "";
 }
 
 restartButton.addEventListener("click", restartCalculator);
-
