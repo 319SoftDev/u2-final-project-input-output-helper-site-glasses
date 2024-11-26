@@ -21,23 +21,21 @@ const nameCompatibility = () => {
         let letter = yourNameInput.value[i].toUpperCase();
         if (letterVal[letter]) {
             sum1 += letterVal[letter];
+            console.log(sum1);
         }
     }
-    console.log(sum1);
 
     // calculating the integer value of the "Crush Name" input
     for (let i = 0; i < crushNameInput.value.length; i++) {
         let letter = crushNameInput.value[i].toUpperCase();
         if (letterVal[letter]) {
             sum2 += letterVal[letter];
+            console.log(sum2);
         }
     }
-    console.log(sum2);
     
     // finding the percentage 
-    console.log(yourNameInput.value.length);
-    console.log(crushNameInput.value.length);
-    let avgNum = (((sum1 * (yourNameInput.value.length + 1)) + (sum2 * (yourNameInput.value.length + 1))) / 20);
+    let avgNum = (((sum1 * (yourNameInput.value.length + 1)) + (sum2 * (yourNameInput.value.length +1))) / 20);
     console.log(avgNum);
 
     percentage.innerHTML = `${avgNum}%`;
@@ -132,3 +130,4 @@ const restartCalculator = () => {
 }
 
 restartButton.addEventListener("click", restartCalculator);
+
