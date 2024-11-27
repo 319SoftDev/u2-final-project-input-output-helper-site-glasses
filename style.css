@@ -101,12 +101,14 @@ body::before {
     transform: translateX(-50%);
     text-align: center;
     
+
 }
 
 #ageResults {
-    top: 55%;
+    top: 47%;
     font-size: 25px;
     font-weight: bold;
+
 }
 
 #percentage {
@@ -116,7 +118,7 @@ body::before {
 }
 
 #phrase {
-    top: 50%;
+    top: 53%;
     font-size: 20px;
     font-weight: bold;
 }
