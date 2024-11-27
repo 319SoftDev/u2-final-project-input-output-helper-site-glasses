@@ -52,6 +52,7 @@ body::before {
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 
@@ -99,6 +100,7 @@ body::before {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    
 }
 
 #ageResults {
@@ -114,8 +116,8 @@ body::before {
 }
 
 #phrase {
-    top: 60%;
-    font-size: 25px;
+    top: 50%;
+    font-size: 20px;
     font-weight: bold;
 }
 
