@@ -78,7 +78,7 @@ body::before {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    display: inline-block;
+    /* display: inline-block; */
     cursor: pointer;
     box-shadow: 0 12px 16px #8d0f0f;
 }
@@ -172,7 +172,6 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 }
 
 
-
 /* Mobile Screens */
 @media (max-width: 768px) {
     .flex-container {
@@ -188,6 +187,11 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         top: 58%;
         padding: 8px;
         font-size: 16px;
+    }
+    #restart-button{
+        top: 58%;
+        padding: 8px;
+        font-size: 16px; 
     }
 
     #ageResults {
@@ -236,6 +240,11 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         padding: 6px;
     }
 
+    #restart-button{
+        font-size: 14px;
+        padding: 6px;
+    }
+
     #ageResults {
         font-size: 18px;
     }
@@ -252,6 +261,32 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         width: 90%;
         padding: 6px;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-button{
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 40, 40);
+    color: aliceblue;
+    border-color: rgba(185, 25, 25, 0.603);
+    border-width: 3px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    /* display: inline-block; */
+    cursor: pointer;
+    box-shadow: 0 12px 16px #8d0f0f;
+}
+
+#restart-button:active {
+    cursor: grabbing;
+}
 }
 
 .hidden {
