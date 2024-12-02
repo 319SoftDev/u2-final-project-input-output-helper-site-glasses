@@ -110,6 +110,8 @@ const cat = document.querySelector("#cat");
 
 const unhide = ()=> {
     cat.classList.remove("hidden");
+    restartButton.classList.remove("hidden");
+    calculateButton.classList.add("hidden");
 }
 
 calculateButton.addEventListener('click', () => {
@@ -128,6 +130,8 @@ const restartCalculator = () => {
     phraseOutput.innerHTML = "";
     ageResult.innerHTML = "";
     cat.classList.add("hidden");
+    calculateButton.classList.remove("hidden");
+    restartButton.classList.add("hidden");
     document.getElementById("your-name").value = "";
     document.getElementById("your-age").value = "";
     document.getElementById("crush-name").value = "";
