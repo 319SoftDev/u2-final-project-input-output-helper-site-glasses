@@ -1,7 +1,6 @@
 body {
-    font-family: "Oleo Script", system-ui;
+    font-family: "Oleo Script", system-ui, sans-serif;
     font-weight: 400;
-    /*font-family: Copperplate, Papyrus, fantasy;*/
     background-image: url("poster.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,6 +11,7 @@ body {
     flex-direction: column;
     position: relative;
     height: 100vh; 
+    margin: 0;
 }
 
 body::before {
@@ -40,7 +40,6 @@ body::before {
     line-height: 50px;
 }
 
-
 .container, .img-center {
     position: relative;
     text-align: center;
@@ -52,9 +51,7 @@ body::before {
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
-
 
 .center {
     position: absolute;
@@ -82,33 +79,26 @@ body::before {
     text-align: center;
     border-radius: 10px;
     display: inline-block;
-    cursor: grab;
+    cursor: pointer;
     box-shadow: 0 12px 16px #8d0f0f;
 }
-
-
 
 #calculate-button:active {
     cursor: grabbing;
 }
 
 
-#ageResults,
-#percentage,
-#phrase {
+#ageResults, #percentage, #phrase {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    
-
 }
 
 #ageResults {
     top: 47%;
     font-size: 25px;
     font-weight: bold;
-
 }
 
 #percentage {
@@ -132,38 +122,74 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     border: none;
 }
 
-
-
 .yourAge, .crush-age {
     padding: 8px;
     margin-bottom: 15px;
-    margin-top: 5px;
+    margin-top: 39px;
+} 
+    
+.ur-zodiac {
+    position: relative;
+    right: -12%;
+    bottom: 393;    
+    background-color: #e2b7c7;
+    text-align: center;
+    box-shadow: 0 5px 16px #af456e;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
 }
 
-/* Mobile */
+
+.zodiac-crush {
+    position: relative;
+    right: -75%;
+    bottom: 458;  
+    background-color: #e2b7c7;
+    text-align: center;
+    box-shadow: 0 5px 16px #af456e;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+
+.button-submit {
+    position: absolute;
+    top: 29%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 40, 40);
+    color: aliceblue;
+    border-color: rgba(185, 25, 25, 0.603);
+    border-width: 3px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: grab;
+    box-shadow: 0 12px 16px #8d0f0f;
+}
+
+
+
+/* Mobile Screens */
 @media (max-width: 768px) {
-    /* smaller screens */
     .flex-container {
         flex-direction: column;
-        margin-top: 220px;
+        margin-top: 110px;
     }
 
-    /* Reduce margins and padding for smaller screens */
     .flex-container > div {
         margin: 50px;
     }
 
     #calculate-button {
-        top: 62%;
+        top: 58%;
         padding: 8px;
         font-size: 16px;
     }
 
-    .crush-name{
-       position: sticky;
-    }
-
-   
     #ageResults {
         font-size: 17px;
     }
@@ -176,15 +202,34 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         font-size: 17px;
     }
 
-    /* Make the form fields more compact */
+    .ur-zodiac{
+        width: 14%;
+        padding: 5px;
+        right: -43%;
+        bottom: 457;
+        margin-bottom: 1px;
+
+    }
+
+    .zodiac-crush{
+        width: 14%;
+        padding: 5px;
+        right: -43%;
+        bottom: 302;
+        margin-bottom: 1px;
+
+    }
+
+
+
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         width: 80%;
         padding: 8px;
-        margin-bottom: 15px;
+        margin-bottom: 11px;
     }
 }
 
-/* very small screens */
+/* Very small screens */
 @media (max-width: 480px) {
     #calculate-button {
         font-size: 14px;
@@ -203,7 +248,6 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         font-size: 18px;
     }
 
-    /* smaller screens */
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         width: 90%;
         padding: 6px;
@@ -212,4 +256,4 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 
 .hidden {
     display: none;
-  }
+}
