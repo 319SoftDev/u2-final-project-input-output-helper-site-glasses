@@ -1,0 +1,42 @@
+.ur-zodiac {
+    position: relative;
+    right: -10%;
+    bottom: 0;    
+    background-color: #edcfda;
+    text-align: center;
+    box-shadow: 0 12px 16px #af456e;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+
+.zodiac-crush {
+    position: relative;
+    right: -10%;
+    bottom: -10px; 
+    background-color: #edcfda;
+    text-align: center;
+    box-shadow: 0 12px 16px #af456e;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+
+.button-submit {
+    position: absolute;
+    top: 29%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 40, 40);
+    color: aliceblue;
+    border-color: rgba(185, 25, 25, 0.603);
+    border-width: 3px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: grab;
+    box-shadow: 0 12px 16px #8d0f0f;
+}

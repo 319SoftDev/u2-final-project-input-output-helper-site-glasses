@@ -3,12 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="prac.css">
 </head>
 <body>
     <div>
         <form action="">
-            <label for="zodiac">Choose your zodiac sign:</label>
-            <select name="zodiac" id="your-zodiac">
+            <label for="zodiac" >Choose your zodiac sign:</label>
+            <br>
+            <select name="zodiac" id="your-zodiac" class="ur-zodiac">
                 <option value="capricorn">Capricorn</option>
                 <option value="aquarius">Aquarius</option>
                 <option value="pisces">Pisces</option>
@@ -26,7 +28,8 @@
 
           <form action="">
             <label for="zodiac">Choose your crush's zodiac sign:</label>
-            <select name="zodiac" id="crush-zodiac">
+            <br>
+            <select name="zodiac" id="crush-zodiac" class="zodiac-crush">
                 <option value="capricorn">Capricorn</option>
                 <option value="aquarius">Aquarius</option>
                 <option value="pisces">Pisces</option>
@@ -42,7 +45,7 @@
             </select>
           </form>
 
-          <input type="submit" id="submit-button" value="Submit">
+          <input type="submit" id="submit-button" value="Submit" class="button-submit">
     <p id="zodiac-result">zodiac compatibility</p>
 
     <script src="prac.js"></script>
