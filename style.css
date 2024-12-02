@@ -125,28 +125,32 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 .yourAge, .crush-age {
     padding: 8px;
     margin-bottom: 15px;
-    margin-top: 5px;
+    margin-top: 39px;
 } 
     
-/* Zodiac Styling */
-.ur-zodiac, .zodiac-crush {
-    background-color: #edcfda;
+.ur-zodiac {
+    position: relative;
+    right: -12%;
+    bottom: 393;    
+    background-color: #e2b7c7;
     text-align: center;
-    box-shadow: 0 12px 16px #af456e;
+    box-shadow: 0 5px 16px #af456e;
     border-radius: 10px;
     padding: 5px;
     border: none;
 }
 
-.ur-zodiac {
-    position: relative;
-    right: -12%;
-}
 
 .zodiac-crush {
     position: relative;
-    right: -10%;
-    bottom: -10px;
+    right: -75%;
+    bottom: 458;  
+    background-color: #e2b7c7;
+    text-align: center;
+    box-shadow: 0 5px 16px #af456e;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
 }
 
 
@@ -163,9 +167,11 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     text-align: center;
     border-radius: 10px;
     display: inline-block;
-    cursor: pointer;
+    cursor: grab;
     box-shadow: 0 12px 16px #8d0f0f;
 }
+
+
 
 /* Mobile Screens */
 @media (max-width: 768px) {
