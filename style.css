@@ -125,13 +125,13 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 .yourAge, .crush-age {
     padding: 8px;
     margin-bottom: 15px;
-    margin-top: 39px;
+    margin-top: 8px;
 } 
     
 .ur-zodiac {
     position: relative;
-    right: -12%;
-    bottom: 393;    
+    right: -9.5%;
+    bottom: 340;    
     background-color: #e2b7c7;
     text-align: center;
     box-shadow: 0 5px 16px #af456e;
@@ -143,8 +143,8 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 
 .zodiac-crush {
     position: relative;
-    right: -75%;
-    bottom: 458;  
+    right: -76%;
+    bottom: 408;  
     background-color: #e2b7c7;
     text-align: center;
     box-shadow: 0 5px 16px #af456e;
@@ -177,7 +177,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 @media (max-width: 768px) {
     .flex-container {
         flex-direction: column;
-        margin-top: 110px;
+        margin-top: 50px;
     }
 
     .flex-container > div {
@@ -185,8 +185,8 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     }
 
     #calculate-button {
-        top: 58%;
-        padding: 8px;
+        top: 55%;
+        padding: 6px;
         font-size: 16px;
     }
 
@@ -206,7 +206,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         width: 14%;
         padding: 5px;
         right: -43%;
-        bottom: 457;
+        bottom: 390;
         margin-bottom: 1px;
 
     }
@@ -215,17 +215,15 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         width: 14%;
         padding: 5px;
         right: -43%;
-        bottom: 302;
+        bottom: 298;
         margin-bottom: 1px;
 
     }
 
-
-
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-        width: 80%;
-        padding: 8px;
-        margin-bottom: 11px;
+        width: 70%;
+        padding: 5px;
+        margin-bottom: 1px;
     }
 }
 
@@ -246,6 +244,22 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 
     #phrase {
         font-size: 18px;
+    }
+
+    .ur-zodiac{
+        width: 14%;
+        padding: 5px;
+        right: -43%;
+        bottom: 415;
+        margin-bottom: 1px;
+    }
+
+    .zodiac-crush{
+        width: 14%;
+        padding: 5px;
+        right: -43%;
+        bottom: 320;
+        margin-bottom: 1px;
     }
 
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
