@@ -219,7 +219,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         width: 14%;
         padding: 5px;
         right: -43%;
-        bottom: 298;
+        bottom: 300;
         margin-bottom: 1px;
 
     }
@@ -301,7 +301,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 #restart-button:active {
     cursor: grabbing;
 }
-}
+
 
 .hidden {
     display: none;
