@@ -59,6 +59,24 @@ const zodiacCompatibility = () => {
         zodiacResult.innerHTML = `78%`;
     } else if (z1 == "scorpio" && z2 == "scorpio") {
         zodiacResult.innerHTML = `80%`;
+    } else if (z1 == "aries" && z2 == "gemini" || z1 == "gemini" && z2 == "aries" || z1 == "capricorn" && z2 == "cancer" || z1 == "cancer" && z2 == "capricorn") {
+        zodiacResult.innerHTML = `83%`;
+    } else if (z1 == "gemini" && z2 == "aquarius" || z1 == "aquarius" && z2 == "gemini" || z1 == "taurus" && z2 == "pisces" || z1 == "pisces" && z2 == "taurus" || z1 == "aries" && z2 == "libra" || z1 == "libra" && z2 == "aries") {
+        zodiacResult.innerHTML = `85%`;
+    } else if (z1 == "pisces" && z2 == "capricorn" || z1 == "capricorn" && z2 == "pisces" || z1 == "virgo" && z2 == "pisces" || z1 == "pisces" && z2 == "virgo" || z1 == "libra" && z2 == "pisces" || z1 == "pisces" && z2 == "libra" || z1 == "scorpio" && z2 == "taurus" || z1 == "taurus" && z2 == "scorpio" || z1 == "leo" && z2 == "gemini" || z1 == "gemini" && z2 == "leo" || z1 == "scorpio" && z2 == "virgo" || z1 == "virgo" && z2 == "scorpio") {
+        zodiacResult.innerHTML = `88%`;
+    } else if (z1 == "libra" && z2 == "aquarius" || z1 == "aquarius" && z2 == "libra" || z1 == "sagittarius" && z2 == "aquarius" || z1 == "aquarius" && z2 == "sagittarius" || z1 == "virgo" && z2 == "taurus" || z1 == "taurus" && z2 == "virgo" || z1 == "virgo" && z2 == "cancer" || z1 == "cancer" && z2 == "virgo") {
+        zodiacResult.innerHTML = `90%`;
+    } else if (z1 == "aries" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "aries" || z1 == "libra" && z2 == "gemini" || z1 == "gemini" && z2 == "libra" || z1 == "leo" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "leo") {
+        zodiacResult.innerHTML = `93%`;
+    } else if (z1 == "scorpio" && z2 == "cancer" || z1 == "cancer" && z2 == "scorpio") {
+        zodiacResult.innerHTML = `94%`;
+    } else if (z1 == "virgo" && z2 == "capricorn" || z1 == "capricorn" && z2 == "virgo" || z1 == "capricorn" && z2 == "scorpio" || z1 == "scorpio" && z2 == "capricorn") {
+        zodiacResult.innerHTML = `95%`;
+    } else if (z1 == "aries" && z2 == "leo" || z1 == "leo" && z2 == "aries" || z1 == "scorpio" && z2 == "pisces" || z1 == "pisces" && z2 == "scorpio" || z1 == "cancer" && z2 == "taurus" || z1 == "taurus" && z2 == "cqancer" || z1 == "libra" && z2 == "leo" || z1 == "leo" && z2 == "libra") {
+        zodiacResult.innerHTML = `97%`;
+    } else {
+        zodiacResult.innerHTML = `98%`;
     }
 }
 
