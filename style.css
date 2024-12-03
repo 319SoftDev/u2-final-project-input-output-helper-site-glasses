@@ -171,6 +171,33 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     box-shadow: 0 12px 16px #8d0f0f;
 }
 
+#restart-button{
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 40, 40);
+    color: aliceblue;
+    border-color: rgba(185, 25, 25, 0.603);
+    border-width: 3px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    /* display: inline-block; */
+    cursor: pointer;
+    box-shadow: 0 12px 16px #8d0f0f;
+}
+
+#restart-button:active {
+    cursor: grabbing;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
 
 /* Mobile Screens */
 @media (max-width: 768px) {
@@ -280,7 +307,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 .hidden {
     display: none;
 }
-
+/*
 #restart-button{
     position: absolute;
     top: 69%;
@@ -293,7 +320,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    /* display: inline-block; */
+    /* display: inline-block; 
     cursor: pointer;
     box-shadow: 0 12px 16px #8d0f0f;
 }
@@ -306,3 +333,4 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 .hidden {
     display: none;
 }
+*/
