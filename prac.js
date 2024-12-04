@@ -51,29 +51,29 @@ const zodiacCompatibility = () => {
         zodiacResult.innerHTML = `67%`;
     } else if (z1 == "aqua" && z2 == "cap" || z1 == "cap" && z2 == "aqua" || z1 == "leo" && z2 == "aqua" || z1 == "aqua" && z2 == "leo" || z1 == "gem" && z2 == "cap" || z1 == "cap" && z2 == "gem" || z1 == "vir" && z2 == "gem" || z1 == "gem" && z2 == "vir" || z1 == "lib" && z2 == "ari" || z1 == "ari" && z2 == "lib") {
         zodiacResult.innerHTML = `68%`;
-    } else if (z1 == "sco" && z2 == "aquarius" || z1 == "aquarius" && z2 == "sco" || z1 == "leo" && z2 == "tau" || z1 == "tau" && z2 == "leo" || z1 == "sag" && z2 == "lib" || z1 == "lib" && z2 == "sag") {
+    } else if (z1 == "sco" && z2 == "aqua" || z1 == "aqua" && z2 == "sco" || z1 == "leo" && z2 == "tau" || z1 == "tau" && z2 == "leo" || z1 == "sag" && z2 == "lib" || z1 == "lib" && z2 == "sag") {
         zodiacResult.innerHTML = `73%`;
-    } else if (z1 == "capricorn" && z2 == "capricorn" || z1 == "can" && z2 == "can" || z1 == "lib" && z2 == "lib") {
+    } else if (z1 == "cap" && z2 == "cap" || z1 == "can" && z2 == "can" || z1 == "lib" && z2 == "lib") {
         zodiacResult.innerHTML = `75%`;
-    } else if (z1 == "aries" && z2 == "aquarius" || z1 == "aquarius" && z2 == "aries") {
+    } else if (z1 == "ari" && z2 == "aqua" || z1 == "aqua" && z2 == "ari") {
         zodiacResult.innerHTML = `78%`;
     } else if (z1 == "sco" && z2 == "sco") {
         zodiacResult.innerHTML = `80%`;
-    } else if (z1 == "aries" && z2 == "gem" || z1 == "gem" && z2 == "aries" || z1 == "capricorn" && z2 == "can" || z1 == "can" && z2 == "capricorn") {
+    } else if (z1 == "ari" && z2 == "gem" || z1 == "gem" && z2 == "aries" || z1 == "cap" && z2 == "can" || z1 == "can" && z2 == "cap") {
         zodiacResult.innerHTML = `83%`;
-    } else if (z1 == "gem" && z2 == "aquarius" || z1 == "aquarius" && z2 == "gem" || z1 == "taurus" && z2 == "pisces" || z1 == "pisces" && z2 == "taurus" || z1 == "aries" && z2 == "lib" || z1 == "lib" && z2 == "aries") {
+    } else if (z1 == "gem" && z2 == "aqua" || z1 == "aqua" && z2 == "gem" || z1 == "tau" && z2 == "pis" || z1 == "pis" && z2 == "tau" || z1 == "ari" && z2 == "lib" || z1 == "lib" && z2 == "ari") {
         zodiacResult.innerHTML = `85%`;
-    } else if (z1 == "pisces" && z2 == "capricorn" || z1 == "capricorn" && z2 == "pisces" || z1 == "vir" && z2 == "pisces" || z1 == "pisces" && z2 == "vir" || z1 == "lib" && z2 == "pisces" || z1 == "pisces" && z2 == "lib" || z1 == "sco" && z2 == "tau" || z1 == "tau" && z2 == "sco" || z1 == "leo" && z2 == "gem" || z1 == "gem" && z2 == "leo" || z1 == "sco" && z2 == "vir" || z1 == "vir" && z2 == "sco") {
+    } else if (z1 == "pis" && z2 == "cap" || z1 == "cap" && z2 == "pis" || z1 == "vir" && z2 == "pis" || z1 == "pis" && z2 == "vir" || z1 == "lib" && z2 == "pis" || z1 == "pis" && z2 == "lib" || z1 == "sco" && z2 == "tau" || z1 == "tau" && z2 == "sco" || z1 == "leo" && z2 == "gem" || z1 == "gem" && z2 == "leo" || z1 == "sco" && z2 == "vir" || z1 == "vir" && z2 == "sco") {
         zodiacResult.innerHTML = `88%`;
-    } else if (z1 == "lib" && z2 == "aquarius" || z1 == "aquarius" && z2 == "lib" || z1 == "sag" && z2 == "aquarius" || z1 == "aquarius" && z2 == "sag" || z1 == "vir" && z2 == "taurus" || z1 == "taurus" && z2 == "vir" || z1 == "vir" && z2 == "can" || z1 == "can" && z2 == "vir") {
+    } else if (z1 == "lib" && z2 == "aqua" || z1 == "aqua" && z2 == "lib" || z1 == "sag" && z2 == "aqua" || z1 == "aqua" && z2 == "sag" || z1 == "vir" && z2 == "taurus" || z1 == "tau" && z2 == "vir" || z1 == "vir" && z2 == "can" || z1 == "can" && z2 == "vir") {
         zodiacResult.innerHTML = `90%`;
-    } else if (z1 == "aries" && z2 == "sag" || z1 == "sag" && z2 == "aries" || z1 == "lib" && z2 == "gem" || z1 == "gem" && z2 == "lib" || z1 == "leo" && z2 == "sag" || z1 == "sag" && z2 == "leo") {
+    } else if (z1 == "ari" && z2 == "sag" || z1 == "sag" && z2 == "ari" || z1 == "lib" && z2 == "gem" || z1 == "gem" && z2 == "lib" || z1 == "leo" && z2 == "sag" || z1 == "sag" && z2 == "leo") {
         zodiacResult.innerHTML = `93%`;
     } else if (z1 == "sco" && z2 == "can" || z1 == "can" && z2 == "sco") {
         zodiacResult.innerHTML = `94%`;
-    } else if (z1 == "vir" && z2 == "capricorn" || z1 == "capricorn" && z2 == "vir" || z1 == "capricorn" && z2 == "sco" || z1 == "sco" && z2 == "capricorn") {
+    } else if (z1 == "vir" && z2 == "cap" || z1 == "cap" && z2 == "vir" || z1 == "cap" && z2 == "sco" || z1 == "sco" && z2 == "cap") {
         zodiacResult.innerHTML = `95%`;
-    } else if (z1 == "aries" && z2 == "leo" || z1 == "leo" && z2 == "aries" || z1 == "sco" && z2 == "pisces" || z1 == "pisces" && z2 == "sco" || z1 == "can" && z2 == "taurus" || z1 == "taurus" && z2 == "can" || z1 == "lib" && z2 == "leo" || z1 == "leo" && z2 == "lib") {
+    } else if (z1 == "ari" && z2 == "leo" || z1 == "leo" && z2 == "ari" || z1 == "sco" && z2 == "pis" || z1 == "pis" && z2 == "sco" || z1 == "can" && z2 == "tau" || z1 == "tau" && z2 == "can" || z1 == "lib" && z2 == "leo" || z1 == "leo" && z2 == "lib") {
         zodiacResult.innerHTML = `97%`;
     } else {
         zodiacResult.innerHTML = `98%`;
