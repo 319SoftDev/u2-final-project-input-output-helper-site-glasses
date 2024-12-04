@@ -231,6 +231,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 
 /* Very small screens */
 @media (max-width: 480px) {
+
     #calculate-button {
         font-size: 14px;
         padding: 6px;
@@ -249,8 +250,9 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     }
 
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-        width: 90%;
+        width: 90%; 
         padding: 6px;
+        margin-bottom: 11px; 
     }
 }
 
