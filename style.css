@@ -1,28 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Oleo Script", system-ui, sans-serif;
-    font-weight: 400;
+    font-family: 'Merienda', sans-serif;
     background-image: url("poster.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(107, 7, 7);
+    color: #a31919;
+    line-height: 1.6;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    position: relative;
-    height: 100vh; 
-    margin: 0;
+    align-items: center;
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.171); /* Dark overlay */
-    z-index: -1;
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    color: #ff4081;
+}
+
+.heading p {
+    font-size: 25px;
+    color: #444;
 }
 
 .flex-container {
@@ -39,35 +47,46 @@ body::before {
     line-height: 0px;
 }
 
-.container, .img-center {
+.container{
     position: relative;
     text-align: center;
 }
 
+.img-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.img-center img {
+    width: 780px;
+    height: auto;
+}
+
+
 
 .cat-img {
     position: absolute;
-    top: 120%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: -730px;
 }
 
-.heading {
-    flex-direction: column;
-    text-align: center;
-}
 
 
 #calculate-button {
     position: absolute;
-    top: 69%;
+    top: 89%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(214, 40, 40);
@@ -86,6 +105,9 @@ body::before {
     cursor: grabbing;
 }
 
+#calculate-button:hover {
+    background-color: rgb(150, 13, 13);
+}
 
 #ageResults, #percentage, #phrase {
     position: absolute;
@@ -112,6 +134,21 @@ body::before {
     font-weight: bold;
 }
 
+
+
+input[type="text"], input[type="number"], select {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #eec1d2;
+    text-align: center;
+    box-shadow: 0 12px 16px #af456e;
+    border-radius: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+}
+/*
 input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     background-color: #eec1d2;
     text-align: center;
@@ -151,7 +188,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     margin-bottom: 15px;
     margin-top: 39px;
 }
-
+*/
 
 .button-submit {
     position: absolute;
@@ -170,6 +207,43 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     box-shadow: 0 12px 16px #8d0f0f;
 }
 
+
+
+
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .heading p {
+        font-size: 20px;
+    }
+
+    .center {
+        margin-top: 30px;
+    }
+
+    .img-center img {
+        width: 650px;
+    }
+
+    input[type="text"], input[type="number"], select {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    #percentage {
+        font-size: 20px;
+    }
+
+    #zodiac-result {
+        font-size: 18px;
+    }
+}
 
 /* Mobile Screens */
 @media (max-width: 768px) {
@@ -214,7 +288,6 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 
 /* Very small screens */
 @media (max-width: 480px) {
-
     #calculate-button {
         font-size: 14px;
         padding: 6px;
@@ -238,16 +311,14 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     }
 
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-        width: 90%; 
+        width: 90%;
         padding: 6px;
-        margin-bottom: 11px; 
     }
 }
 
 .hidden {
     display: none;
 }
-
 
 #reset-button{
     position: absolute;
@@ -269,5 +340,3 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 #reset-button:active {
     cursor: grabbing;
 }
-
-
