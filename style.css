@@ -1,36 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Merienda', sans-serif;
+    font-family: "Oleo Script", system-ui, sans-serif;
+    font-weight: 400;
     background-image: url("poster.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #a31919;
-    line-height: 1.6;
-    padding: 20px;
+    color: rgb(107, 7, 7);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh; 
+    margin: 0;
 }
 
-.heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.heading h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 50px;
-    color: #ff4081;
-}
-
-.heading p {
-    font-size: 25px;
-    color: #444;
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.171); /* Dark overlay */
+    z-index: -1;
 }
 
 .flex-container {
@@ -47,46 +39,35 @@ body {
     line-height: 0px;
 }
 
-.container{
+.container, .img-center {
     position: relative;
     text-align: center;
 }
 
-.img-center {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.img-center img {
-    width: 780px;
-    height: auto;
-}
-
-
 
 .cat-img {
     position: absolute;
-    top: 180%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-    max-width: 900px;
-    margin-top: -730px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.heading {
+    flex-direction: column;
+    text-align: center;
+}
 
 
 #calculate-button {
     position: absolute;
-    top: 89%;
+    top: 69%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(214, 40, 40);
@@ -105,9 +86,6 @@ body {
     cursor: grabbing;
 }
 
-#calculate-button:hover {
-    background-color: rgb(150, 13, 13);
-}
 
 #ageResults, #percentage, #phrase {
     position: absolute;
@@ -134,19 +112,46 @@ body {
     font-weight: bold;
 }
 
-
-input[type="text"], input[type="number"], select {
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
+input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     background-color: #eec1d2;
     text-align: center;
     box-shadow: 0 12px 16px #af456e;
     border-radius: 10px;
-    margin: 10px 0;
-    outline: none;
+    padding: 10px;
     border: none;
 }
+
+.yourAge, .crush-age {
+    padding: 8px;
+    margin-bottom: px;
+    margin-top: 39px;
+} 
+    
+.ur-zodiac {
+    position: relative; 
+    background-color: #eec1d2;
+    text-align: center;
+    box-shadow: 0 12px 16px #af456e;
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    margin-bottom: 8px;
+    margin-top: 39px;
+}
+
+
+.zodiac-crush {
+    position: relative;
+    background-color: #eec1d2;
+    text-align: center;
+    box-shadow: 0 5px 16px #af456e;
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    margin-bottom: 15px;
+    margin-top: 39px;
+}
+
 
 .button-submit {
     position: absolute;
@@ -166,47 +171,11 @@ input[type="text"], input[type="number"], select {
 }
 
 
-@media (max-width: 768px) {
-    .heading h1 {
-        font-size: 40px;
-    }
-
-    .heading p {
-        font-size: 20px;
-    }
-
-    .center {
-        margin-top: 80px;
-    }
-
-    .img-center img {
-        width: 580px;
-    }
-
-    input[type="text"], input[type="number"], select {
-        width: 55%;
-        font-size: 14px;
-    }
-
-    button {
-        width: 20%;
-    }
-
-    #percentage {
-        top: 65%;
-        font-size: 20px;
-    }
-
-    #zodiac-result {
-        font-size: 18px;
-    }
-}
-
 /* Mobile Screens */
-@media (max-width: 568px) {
+@media (max-width: 768px) {
     .flex-container {
         flex-direction: column;
-        margin-top: -600px;
+        margin-top: 110px;
     }
 
     .flex-container > div {
@@ -214,17 +183,17 @@ input[type="text"], input[type="number"], select {
     }
 
     #calculate-button {
-        top: 75%;
+        top: 58%;
         padding: 8px;
         font-size: 16px;
     }
     #restart-button{
+        top: 58%;
         padding: 8px;
         font-size: 16px; 
     }
 
     #ageResults {
-        top: -350%;
         font-size: 17px;
     }
 
@@ -239,7 +208,7 @@ input[type="text"], input[type="number"], select {
     input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         width: 80%;
         padding: 8px;
-        margin-bottom: 1px;
+        margin-bottom: 11px;
     }
 }
 
@@ -260,7 +229,6 @@ input[type="text"], input[type="number"], select {
     }
 
     #percentage {
-
         font-size: 28px;
     }
 
@@ -274,6 +242,9 @@ input[type="text"], input[type="number"], select {
     }
 }
 
+.hidden {
+    display: none;
+}
 
 #reset-button{
     position: absolute;
@@ -296,6 +267,3 @@ input[type="text"], input[type="number"], select {
     cursor: grabbing;
 }
 
-.hidden {
-    display: none;
-}
