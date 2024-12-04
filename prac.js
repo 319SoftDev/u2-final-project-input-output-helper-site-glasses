@@ -11,69 +11,69 @@ const zodiacCompatibility = () => {
     let z2 = crushZodiac.value;
     console.log(z2);
 
-    if (z1 == "cancer" && z2 == "aquarius" || z1 == "aquarius" && z2 == "cancer") {
+    if (z1 == "can" && z2 == "aqua" || z1 == "aqua" && z2 == "can") {
         zodiacResult.innerHTML = `27%`;
-    } else if (z1 == "gemini" && z2 == "scorpio" || z1 == "scorpio" && z2 == "gemini" || z1 == "scorpio" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "scorpio") {
+    } else if (z1 == "gem" && z2 == "sco" || z1 == "sco" && z2 == "gem" || z1 == "sco" && z2 == "sag" || z1 == "sag" && z2 == "sco") {
         zodiacResult.innerHTML = `28%`;
-    } else if (z1 == "virgo" && z2 == "aquarius" || z1 == "aquarius" && z2 == "virgo" || z1 == "sagittarius" && z2 == "taurus" || z1 == "taurus" && z2 == "sagittarius") {
+    } else if (z1 == "vir" && z2 == "aqua" || z1 == "aqua" && z2 == "vir" || z1 == "sag" && z2 == "tau" || z1 == "tau" && z2 == "sag") {
         zodiacResult.innerHTML = `30%`;
-    } else if (z1 == "gemini" && z2 == "taurus" || z1 == "taurus" && z2 == "gemini") {
+    } else if (z1 == "gem" && z2 == "tau" || z1 == "tau" && z2 == "gem") {
         zodiacResult.innerHTML = `33%`;
-    } else if (z1 == "leo" && z2 == "capricorn" || z1 == "capricorn" && z2 == "leo" || z1 == "leo" && z2 == "cancer" || z1 == "cancer" && z2 == "leo" || z1 == "virgo" && z2 == "leo" || z1 == "leo" && z2 == "virgo") {
+    } else if (z1 == "leo" && z2 == "cap" || z1 == "cap" && z2 == "leo" || z1 == "leo" && z2 == "can" || z1 == "can" && z2 == "leo" || z1 == "vir" && z2 == "leo" || z1 == "leo" && z2 == "vir") {
         zodiacResult.innerHTML = `35%`;
-    } else if (z1 == "leo" && z2 == "pisces" || z1 == "pisces" && z2 == "leo" || z1 == "taurus" && z2 == "aries" || z1 == "aries" && z2 == "taurus") {
+    } else if (z1 == "leo" && z2 == "pis" || z1 == "pis" && z2 == "leo" || z1 == "tau" && z2 == "ari" || z1 == "ari" && z2 == "tau") {
         zodiacResult.innerHTML = `38%`;
-    } else if (z1 == "cancer" && z2 == "aries" || z1 == "aries" && z2 == "cancer") {
+    } else if (z1 == "can" && z2 == "aries" || z1 == "aries" && z2 == "can") {
         zodiacResult.innerHTML = `42%`;
-    } else if (z1 == "cancer" && z2 == "libra" || z1 == "libra" && z2 == "cancer") {
+    } else if (z1 == "can" && z2 == "lib" || z1 == "lib" && z2 == "can") {
         zodiacResult.innerHTML = `43%`;
-    } else if (z1 == "sagittarius" && z2 == "sagittarius" || z1 == "pisces" && z2 == "aquarius" || z1 == "aquarius" && z2 == "pisces" || z1 == "leo" && z2 == "leo") {
+    } else if (z1 == "sag" && z2 == "sag" || z1 == "pis" && z2 == "aqua" || z1 == "aqua" && z2 == "pis" || z1 == "leo" && z2 == "leo") {
         zodiacResult.innerHTML = `45%`;
-    } else if (z1 == "aries" && z2 == "capricorn" || z1 == "capricorn" && z2 == "aries") {
+    } else if (z1 == "ari" && z2 == "cap" || z1 == "cap" && z2 == "ari") {
         zodiacResult.innerHTML = `47%`;
-    } else if (z1 == "virgo" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "virgo"){
+    } else if (z1 == "vir" && z2 == "sag" || z1 == "sag" && z2 == "vir"){
         zodiacResult.innerHTML = `48%`;
-    } else if (z1 == "aries" && z2 == "aries" || z1 == "scorpio" && z2 == "aries" || z1 == "aries" && z2 == "scorpio") {
+    } else if (z1 == "ari" && z2 == "ari" || z1 == "sco" && z2 == "ari" || z1 == "ari" && z2 == "sco") {
         zodiacResult.innerHTML = `50%`;
-    } else if (z1 == "cancer" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "cancer" || z1 == "gemini" && z2 == "pisces" || z1 == "pisces" && z2 == "gemini") {
+    } else if (z1 == "can" && z2 == "sag" || z1 == "sag" && z2 == "can" || z1 == "gem" && z2 == "pisces" || z1 == "pisces" && z2 == "gem") {
         zodiacResult.innerHTML = `53%`;
-    } else if (z1 == "libra" && z2 == "capricorn" || z1 == "capricorn" && z2 == "libra") {
+    } else if (z1 == "lib" && z2 == "cap" || z1 == "cap" && z2 == "lib") {
         zodiacResult.innerHTML = `55%`;
-    } else if (z1 == "taurus" && z2 == "aquarius" || z1 == "aquarius" && z2 == "taurus" || z1 == "scorpio" && z2 == "leo" || z1 == "leo" && z2 == "scorpio") {
+    } else if (z1 == "tau" && z2 == "aqua" || z1 == "aqua" && z2 == "tau" || z1 == "sco" && z2 == "leo" || z1 == "leo" && z2 == "sco") {
         zodiacResult.innerHTML = `58%`;
-    } else if (z1 == "sagittarius" && z2 == "capricorn" || z1 == "capricorn" && z2 == "sagittarius" || z1 == "gemini" && z2 == "gemini" || z1 == "gemini" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "gemini") {
+    } else if (z1 == "sag" && z2 == "cap" || z1 == "cap" && z2 == "sag" || z1 == "gem" && z2 == "gem" || z1 == "gem" && z2 == "sag" || z1 == "sag" && z2 == "gem") {
         zodiacResult.innerHTML = `60%`;
-    } else if (z1 == "sagittarius" && z2 == "pisces" || z1 == "pisces" && z2 == "sagittarius" || z1 == "virgo" && z2 == "aries" || z1 == "aries" && z2 == "virgo") {
+    } else if (z1 == "sag" && z2 == "pis" || z1 == "pis" && z2 == "sag" || z1 == "vir" && z2 == "ari" || z1 == "ari" && z2 == "vir") {
         zodiacResult.innerHTML = `63%`;
-    } else if (z1 == "taurus" && z2 == "taurus" || z1 == "virgo" && z2 == "virgo" || z1 == "libra" && z2 == "taurus" || z1 == "taurus" && z2 == "libra" || z1 == "cancer" && z2 == "gemini" || z1 == "gemini" && z2 == "cancer") {
+    } else if (z1 == "tau" && z2 == "tau" || z1 == "vir" && z2 == "vir" || z1 == "lib" && z2 == "tau" || z1 == "tau" && z2 == "lib" || z1 == "can" && z2 == "gem" || z1 == "gem" && z2 == "can") {
         zodiacResult.innerHTML = `65%`;
-    } else if (z1 == "aries" && z2 == "pisces" || z1 == "pisces" && z2 == "aries") {
+    } else if (z1 == "ari" && z2 == "pis" || z1 == "pis" && z2 == "ari") {
         zodiacResult.innerHTML = `67%`;
-    } else if (z1 == "aquarius" && z2 == "capricorn" || z1 == "capricorn" && z2 == "aquarius" || z1 == "leo" && z2 == "aquarius" || z1 == "aquarius" && z2 == "leo" || z1 == "gemini" && z2 == "capricorn" || z1 == "capricorn" && z2 == "gemini" || z1 == "virgo" && z2 == "gemini" || z1 == "gemini" && z2 == "virgo" || z1 == "libra" && z2 == "aries" || z1 == "aries" && z2 == "libra") {
+    } else if (z1 == "aqua" && z2 == "cap" || z1 == "cap" && z2 == "aqua" || z1 == "leo" && z2 == "aqua" || z1 == "aqua" && z2 == "leo" || z1 == "gem" && z2 == "cap" || z1 == "cap" && z2 == "gem" || z1 == "vir" && z2 == "gem" || z1 == "gem" && z2 == "vir" || z1 == "lib" && z2 == "ari" || z1 == "ari" && z2 == "lib") {
         zodiacResult.innerHTML = `68%`;
-    } else if (z1 == "scorpio" && z2 == "aquarius" || z1 == "aquarius" && z2 == "scorpio" || z1 == "leo" && z2 == "taurus" || z1 == "taurus" && z2 == "leo" || z1 == "sagittarius" && z2 == "libra" || z1 == "libra" && z2 == "sagittarius") {
+    } else if (z1 == "sco" && z2 == "aquarius" || z1 == "aquarius" && z2 == "sco" || z1 == "leo" && z2 == "tau" || z1 == "tau" && z2 == "leo" || z1 == "sag" && z2 == "lib" || z1 == "lib" && z2 == "sag") {
         zodiacResult.innerHTML = `73%`;
-    } else if (z1 == "capricorn" && z2 == "capricorn" || z1 == "cancer" && z2 == "cancer" || z1 == "libra" && z2 == "libra") {
+    } else if (z1 == "capricorn" && z2 == "capricorn" || z1 == "can" && z2 == "can" || z1 == "lib" && z2 == "lib") {
         zodiacResult.innerHTML = `75%`;
     } else if (z1 == "aries" && z2 == "aquarius" || z1 == "aquarius" && z2 == "aries") {
         zodiacResult.innerHTML = `78%`;
-    } else if (z1 == "scorpio" && z2 == "scorpio") {
+    } else if (z1 == "sco" && z2 == "sco") {
         zodiacResult.innerHTML = `80%`;
-    } else if (z1 == "aries" && z2 == "gemini" || z1 == "gemini" && z2 == "aries" || z1 == "capricorn" && z2 == "cancer" || z1 == "cancer" && z2 == "capricorn") {
+    } else if (z1 == "aries" && z2 == "gem" || z1 == "gem" && z2 == "aries" || z1 == "capricorn" && z2 == "can" || z1 == "can" && z2 == "capricorn") {
         zodiacResult.innerHTML = `83%`;
-    } else if (z1 == "gemini" && z2 == "aquarius" || z1 == "aquarius" && z2 == "gemini" || z1 == "taurus" && z2 == "pisces" || z1 == "pisces" && z2 == "taurus" || z1 == "aries" && z2 == "libra" || z1 == "libra" && z2 == "aries") {
+    } else if (z1 == "gem" && z2 == "aquarius" || z1 == "aquarius" && z2 == "gem" || z1 == "taurus" && z2 == "pisces" || z1 == "pisces" && z2 == "taurus" || z1 == "aries" && z2 == "lib" || z1 == "lib" && z2 == "aries") {
         zodiacResult.innerHTML = `85%`;
-    } else if (z1 == "pisces" && z2 == "capricorn" || z1 == "capricorn" && z2 == "pisces" || z1 == "virgo" && z2 == "pisces" || z1 == "pisces" && z2 == "virgo" || z1 == "libra" && z2 == "pisces" || z1 == "pisces" && z2 == "libra" || z1 == "scorpio" && z2 == "taurus" || z1 == "taurus" && z2 == "scorpio" || z1 == "leo" && z2 == "gemini" || z1 == "gemini" && z2 == "leo" || z1 == "scorpio" && z2 == "virgo" || z1 == "virgo" && z2 == "scorpio") {
+    } else if (z1 == "pisces" && z2 == "capricorn" || z1 == "capricorn" && z2 == "pisces" || z1 == "vir" && z2 == "pisces" || z1 == "pisces" && z2 == "vir" || z1 == "lib" && z2 == "pisces" || z1 == "pisces" && z2 == "lib" || z1 == "sco" && z2 == "tau" || z1 == "tau" && z2 == "sco" || z1 == "leo" && z2 == "gem" || z1 == "gem" && z2 == "leo" || z1 == "sco" && z2 == "vir" || z1 == "vir" && z2 == "sco") {
         zodiacResult.innerHTML = `88%`;
-    } else if (z1 == "libra" && z2 == "aquarius" || z1 == "aquarius" && z2 == "libra" || z1 == "sagittarius" && z2 == "aquarius" || z1 == "aquarius" && z2 == "sagittarius" || z1 == "virgo" && z2 == "taurus" || z1 == "taurus" && z2 == "virgo" || z1 == "virgo" && z2 == "cancer" || z1 == "cancer" && z2 == "virgo") {
+    } else if (z1 == "lib" && z2 == "aquarius" || z1 == "aquarius" && z2 == "lib" || z1 == "sag" && z2 == "aquarius" || z1 == "aquarius" && z2 == "sag" || z1 == "vir" && z2 == "taurus" || z1 == "taurus" && z2 == "vir" || z1 == "vir" && z2 == "can" || z1 == "can" && z2 == "vir") {
         zodiacResult.innerHTML = `90%`;
-    } else if (z1 == "aries" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "aries" || z1 == "libra" && z2 == "gemini" || z1 == "gemini" && z2 == "libra" || z1 == "leo" && z2 == "sagittarius" || z1 == "sagittarius" && z2 == "leo") {
+    } else if (z1 == "aries" && z2 == "sag" || z1 == "sag" && z2 == "aries" || z1 == "lib" && z2 == "gem" || z1 == "gem" && z2 == "lib" || z1 == "leo" && z2 == "sag" || z1 == "sag" && z2 == "leo") {
         zodiacResult.innerHTML = `93%`;
-    } else if (z1 == "scorpio" && z2 == "cancer" || z1 == "cancer" && z2 == "scorpio") {
+    } else if (z1 == "sco" && z2 == "can" || z1 == "can" && z2 == "sco") {
         zodiacResult.innerHTML = `94%`;
-    } else if (z1 == "virgo" && z2 == "capricorn" || z1 == "capricorn" && z2 == "virgo" || z1 == "capricorn" && z2 == "scorpio" || z1 == "scorpio" && z2 == "capricorn") {
+    } else if (z1 == "vir" && z2 == "capricorn" || z1 == "capricorn" && z2 == "vir" || z1 == "capricorn" && z2 == "sco" || z1 == "sco" && z2 == "capricorn") {
         zodiacResult.innerHTML = `95%`;
-    } else if (z1 == "aries" && z2 == "leo" || z1 == "leo" && z2 == "aries" || z1 == "scorpio" && z2 == "pisces" || z1 == "pisces" && z2 == "scorpio" || z1 == "cancer" && z2 == "taurus" || z1 == "taurus" && z2 == "cqancer" || z1 == "libra" && z2 == "leo" || z1 == "leo" && z2 == "libra") {
+    } else if (z1 == "aries" && z2 == "leo" || z1 == "leo" && z2 == "aries" || z1 == "sco" && z2 == "pisces" || z1 == "pisces" && z2 == "sco" || z1 == "can" && z2 == "taurus" || z1 == "taurus" && z2 == "can" || z1 == "lib" && z2 == "leo" || z1 == "leo" && z2 == "lib") {
         zodiacResult.innerHTML = `97%`;
     } else {
         zodiacResult.innerHTML = `98%`;

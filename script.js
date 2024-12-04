@@ -38,7 +38,11 @@ const nameCompatibility = () => {
     let avgNum = (((sum1 * (yourNameInput.value.length + 1)) + (sum2 * (yourNameInput.value.length +1))) / 20);
     console.log(avgNum);
 
-    percentage.innerHTML = `${avgNum}%`;
+    if (avgNum > 100) {
+        percentage.innerHTML = `100%`;
+    } else {
+        percentage.innerHTML = `${avgNum}%`;
+    }
 
     // the phrases that result based on the percentage in ranges of 10
     if (avgNum < 11) {
@@ -63,6 +67,8 @@ const nameCompatibility = () => {
         phraseOutput.innerHTML = `Invite me to the carne asada`;
     }
 }
+
+// zodiac compatibility
 
 
 // age input query selectors
