@@ -1,17 +1,14 @@
 body {
-    font-family: "Oleo Script", system-ui, sans-serif;
-    font-weight: 400;
+    font-family: 'Merienda', sans-serif;
     background-image: url("poster.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(107, 7, 7);
+    color: #a31919;
+    line-height: 1.6;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    position: relative;
-    height: 100vh; 
-    margin: 0;
+    align-items: center;
 }
 
 body::before {
@@ -21,7 +18,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.171); /* Dark overlay */
+    background-color: rgba(255, 255, 255, 0.171); 
     z-index: -1;
 }
 
@@ -58,10 +55,21 @@ body::before {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .heading {
     flex-direction: column;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    color: #ff4081;
+}
+
+.heading p {
+    font-size: 25px;
+    color: #a31919;
 }
 
 
@@ -84,6 +92,10 @@ body::before {
 
 #calculate-button:active {
     cursor: grabbing;
+}
+
+#calculate-button:hover {
+    background-color: rgb(150, 13, 13);
 }
 
 
@@ -123,8 +135,8 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
 
 .yourAge, .crush-age {
     padding: 8px;
-    margin-bottom: px;
-    margin-top: 39px;
+    margin-bottom: -30px;
+    margin-top: 10px;
 } 
     
 .ur-zodiac {
@@ -206,66 +218,72 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         flex-direction: column;
     }
     .flex-container > div {
-        margin: 50px 0;
+        margin: 70px ;
     }
     #calculate-button, #reset-button {
-        top: 80%;
+        top: 70%;
     }
     .cat-img {
-        top: 110%;
+        top: 100%;
     }
     #ageResults {
         top: 35%;
-        font-size: 20px;
+        font-size: 60%;
     }
     #percentage {
-        top: 40%;
-        font-size: 30px;
+        left: 390;
+        top:59%;
+        font-size: 50px;
     }
     #phrase {
         top: 40%;
         font-size: 16px;
     }
     .button-submit {
-        top: 20%;
+        top: 76%;
+        left: 385;
     }
     input[type="text"], .yourAge, .crush-age {
         width: 90%;
-        padding: 14px;
+        padding: 9px;
     }
 }
 
 /* Very small screens */
-@media (max-width: 480px) {
-    #calculate-button {
-        font-size: 14px;
-        padding: 6px;
-        
+@media (max-width: 414px) {
+    body {
+        flex-direction: column;
     }
-
-    #reset-button{
-        font-size: 14px;
-        padding: 6px;
+    .flex-container > div {
+        margin: 70px ;
     }
-
+    #calculate-button, #reset-button {
+        top: 70%;
+    }
+    .cat-img {
+        top: 90%;
+    }
     #ageResults {
-        font-size: 18px;
+        top: 35%;
+        font-size: 10%;
     }
-
     #percentage {
-        font-size: 28px;
+        top:62%;
+        font-size: 20px;
     }
-
     #phrase {
-        font-size: 18px;
+        top: 40%;
+        font-size: 16px;
     }
-
-    input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
+    .button-submit {
+        top: 76%;
+        left: 210;
+    }
+    input[type="text"], .yourAge, .crush-age {
         width: 90%;
-        padding: 6px;
+        padding: 3px;
     }
 }
-
 
 /*
 .hidden {
