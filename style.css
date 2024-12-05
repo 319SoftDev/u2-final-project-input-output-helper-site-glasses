@@ -158,89 +158,18 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     top: 29%;
     left: 15%;
     transform: translate(-50%, -50%);
-    background-color: rgb(214, 40, 40);
+    background-color: rgb(217, 11, 111);
     color: aliceblue;
-    border-color: rgba(185, 25, 25, 0.603);
+    border-color: rgba(156, 13, 70, 0.603);
     border-width: 3px;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     display: inline-block;
     cursor: grab;
-    box-shadow: 0 12px 16px #8d0f0f;
+    box-shadow: 0 12px 16px #6a2b54;
 }
 
-
-/* Mobile Screens */
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-        margin-top: 110px;
-    }
-
-    .flex-container > div {
-        margin: 50px;
-    }
-
-    #calculate-button {
-        top: 58%;
-        padding: 8px;
-        font-size: 16px;
-    }
-    #restart-button{
-        top: 58%;
-        padding: 8px;
-        font-size: 16px; 
-    }
-
-    #ageResults {
-        font-size: 17px;
-    }
-
-    #percentage {
-        font-size: 35px;
-    }
-
-    #phrase {
-        font-size: 17px;
-    }
-
-    input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-        width: 80%;
-        padding: 8px;
-        margin-bottom: 11px;
-    }
-}
-
-/* Very small screens */
-@media (max-width: 480px) {
-    #calculate-button {
-        font-size: 14px;
-        padding: 6px;
-    }
-
-    #reset-button{
-        font-size: 14px;
-        padding: 6px;
-    }
-
-    #ageResults {
-        font-size: 18px;
-    }
-
-    #percentage {
-        font-size: 28px;
-    }
-
-    #phrase {
-        font-size: 18px;
-    }
-
-    input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
-        width: 90%;
-        padding: 6px;
-    }
-}
 
 .hidden {
     display: none;
@@ -267,3 +196,100 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
     cursor: grabbing;
 }
 
+
+
+
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .flex-container > div {
+        margin: 50px 0;
+    }
+    #calculate-button, #reset-button {
+        top: 80%;
+    }
+    .cat-img {
+        top: 110%;
+    }
+    #ageResults {
+        top: 35%;
+        font-size: 20px;
+    }
+    #percentage {
+        top: 40%;
+        font-size: 30px;
+    }
+    #phrase {
+        top: 40%;
+        font-size: 16px;
+    }
+    .button-submit {
+        top: 20%;
+    }
+    input[type="text"], .yourAge, .crush-age {
+        width: 90%;
+        padding: 14px;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    #calculate-button {
+        font-size: 14px;
+        padding: 6px;
+        
+    }
+
+    #reset-button{
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    #ageResults {
+        font-size: 18px;
+    }
+
+    #percentage {
+        font-size: 28px;
+    }
+
+    #phrase {
+        font-size: 18px;
+    }
+
+    input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
+        width: 90%;
+        padding: 6px;
+    }
+}
+
+
+/*
+.hidden {
+    display: none;
+}
+
+#reset-button{
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(214, 40, 40);
+    color: aliceblue;
+    border-color: rgba(185, 25, 25, 0.603);
+    border-width: 3px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    /* display: inline-block; 
+    cursor: pointer;
+    box-shadow: 0 12px 16px #8d0f0f;
+}
+
+#reset-button:active {
+    cursor: grabbing;
+}
+*/
