@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
+/*
 body::before {
     content: '';
     position: absolute;
@@ -21,7 +21,7 @@ body::before {
     background-color: rgba(255, 255, 255, 0.171); 
     z-index: -1;
 }
-
+*/
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
@@ -42,11 +42,14 @@ body::before {
 }
 
 
-.cat-img {
-    position: absolute;
+.cat-img, #ageResults{
+    /*position: absolute;
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
+    */
+    display: flex;
+    align-items: center;
 }
 
 .center {
@@ -99,19 +102,21 @@ body::before {
 }
 
 
-#ageResults, #percentage, #phrase {
+#ageResults,#percentage, #phrase {
+    display: flex;
+    align-items: center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
-
+/*
 #ageResults {
     top: 47%;
     font-size: 25px;
     font-weight: bold;
 }
-
+*/
 #percentage {
     top: 52%;
     font-size: 40px;
@@ -119,7 +124,7 @@ body::before {
 }
 
 #phrase {
-    top: 52%;
+    top: 145%;
     font-size: 19px;
     font-weight: bold;
 }
@@ -224,11 +229,11 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         top: 70%;
     }
     .cat-img {
-        top: 100%;
+        top: 0%;
     }
     #ageResults {
-        top: 35%;
-        font-size: 60%;
+        top: 126%;
+        font-size: 100%;
     }
     #percentage {
         left: 390;
@@ -236,7 +241,7 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         font-size: 50px;
     }
     #phrase {
-        top: 40%;
+        top: 129%;
         font-size: 16px;
     }
     .button-submit {
@@ -268,11 +273,12 @@ input[type="text"], .yourInfo, .yourAge, .crush-name, .crush-age {
         font-size: 10%;
     }
     #percentage {
+        left: 52%;
         top:62%;
         font-size: 20px;
     }
     #phrase {
-        top: 40%;
+        top: 105%;
         font-size: 16px;
     }
     .button-submit {
