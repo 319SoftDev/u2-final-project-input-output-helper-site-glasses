@@ -208,7 +208,7 @@ const finalPercentage = () => {
     let finalPercent = ((70 * namePercent) / 100) + ((30 * zodiacPercent) / 100);
 
     percentage.innerHTML = `${finalPercent}%`;
-
+    document.getElementById("progressBar").setAttribute("value", avgNum);
     // the phrases that result based on the percentage in ranges of 10
     if (finalPercent < 11) {
         phraseOutput.innerHTML = `Ouch. That's not just low, that's "maybe you two should just stay friends... forever" territory. Honestly, even the love calculator is giving up on this one—guess it's time to delete the app and try something else, like maybe a pet goldfish.`;
