@@ -175,7 +175,12 @@ const finalPercentage = () => {
 
     let finalPercent = ((70 * namePercent) / 100) + ((30 * zodiacPercent) / 100);
 
-    percentage.innerHTML = `${finalPercent}%`;
+    if (finalPercent > 100) {
+        percentage.innerHTML = `100%`;
+    } else {
+        percentage.innerHTML = `${finalPercent}%`;
+    }
+    
     document.getElementById("progressBar").setAttribute("value", avgNum);
     // the phrases that result based on the percentage in ranges of 10
     if (finalPercent < 11) {
