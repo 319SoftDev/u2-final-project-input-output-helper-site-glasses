@@ -173,7 +173,7 @@ const finalPercentage = () => {
     let namePercent = nameCompatibility();
     let zodiacPercent = zodiacCompatibility();
 
-    let finalPercent = ((70 * namePercent) / 100) + ((30 * zodiacPercent) / 100);
+    let finalPercent = Math.floor((70 * namePercent) / 100) + (Math.floor(30 * zodiacPercent) / 100);
 
     if (finalPercent > 100) {
         percentage.innerHTML = `100%`;
